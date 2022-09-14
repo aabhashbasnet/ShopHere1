@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="logo.png" alt="image"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Items.html">Items</a></li>
+                    <li><a href="Customize.html">Customize</a></li>
+                </ul>
+                <p class="menu">Welcome</p>
+                <img class="close" src="close2.jpg" onclick="closeMenu()">
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="openMenu()">
+        </div>
+        <div class="content-row">
+            <div class="left-col">
+                <div class="search">
+                    <img src="search.png" alt="">
+                    <input type="text" placeholder="Search Items">
+                </div>
+                <hr>
+                <h1>Buy Your Clothing From Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ipsum minima magni ullam
+                    incidunt, exercitationem fugit illum reprehenderit eveniet a deleniti molestiae fuga.</p>
+                <div class="indicator">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="right-col">
+                <img src="design.jpg" alt="">
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="fb.png" alt=""></a>
+            <a href="#"><img src="insta.jpg" alt=""></a>
+            <a href="#"><img src="twitter.png" alt=""></a>
+        </div>
+    </div>
+    <SCRIPT>
+        var menu = document.getElementById('menu');
+        function closeMenu() {
+            menu.style.top = "-100vh";
+        }
+        function openMenu()
+        {
+            menu.style.top="0";
+        }
+    </SCRIPT>
+
+</body>
+
+</html>
